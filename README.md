@@ -1,7 +1,8 @@
 # JavaScript Interview Questions & Answers
 
 <!-- QUESTIONS_START -->
- Original file link: https://github.com/sudheerj/javascript-interview-questions?tab=readme-ov-file#how-do-you-manipulate-dom-using-a-service-worker
+
+Original file link: https://github.com/sudheerj/javascript-interview-questions?tab=readme-ov-file#how-do-you-manipulate-dom-using-a-service-worker
 
 1.  ### What is the purpose of the let keyword
 
@@ -5132,7 +5133,7 @@ The polyfills for array methods such as map, filter and reduce methods can be cr
           console.log(sum); // 21
         ```
 
-4.  ### What are the array mutation methods?
+282.  ### What are the array mutation methods?
     JavaScript array methods can be categorized into two groups:
 5.  Mutating methods: These are the methods that directly modify the original array.
 6.  Non-mutating methods: These methods return a new array without altering the original one.
@@ -5149,7 +5150,7 @@ There are 9 methods in total that mutate the arrays,
 8.  **fill:** Fills all elements of the array with a specific value.
 9.  **copyWithIn:** Copies a sequence of elements within the array to a specified target index in the same array.
 
-10. ### What happens If I pass string type for getPrototype method
+283. ### What happens If I pass string type for getPrototype method
 
     In ES5, it will throw a TypeError exception if the obj parameter isn't an object. Whereas in ES2015, the parameter will be coerced to an `Object`.
 
@@ -5160,7 +5161,7 @@ There are 9 methods in total that mutate the arrays,
     Object.getPrototypeOf("James"); // String.prototype
     ```
 
-11. ### How do you make first letter of the string in an uppercase
+284. ### How do you make first letter of the string in an uppercase
 
     You can create a function which uses a chain of string methods such as charAt, toUpperCase and slice methods to generate a string with the first letter in uppercase.
 
@@ -5170,7 +5171,7 @@ There are 9 methods in total that mutate the arrays,
     }
     ```
 
-12. ### How do you parse JSON string
+285. ### How do you parse JSON string
 
     When receiving the data from a web server, the data is always in a string format. But you can convert this string value to a javascript object using parse() method.
 
@@ -5180,7 +5181,7 @@ There are 9 methods in total that mutate the arrays,
     console.log(userJSON); // {name: "John", age: 31}
     ```
 
-13. ### How do you check whether a string contains a substring
+286. ### How do you check whether a string contains a substring
 
     There are 3 possible ways to check whether a string contains a substring or not,
     1. **Using includes:** ES6 provided `String.prototype.includes` method to test a string contains a substring
@@ -5207,7 +5208,7 @@ There are 9 methods in total that mutate the arrays,
     regex.test(mainString);
     ```
 
-14. ### How do you check if a string starts with another string
+287. ### How do you check if a string starts with another string
 
     You can use ECMAScript 6's `String.prototype.startsWith()` method to check if a string starts with another string or not. But it is not yet supported in all browsers. Let's see an example to see this usage,
 
@@ -5216,7 +5217,7 @@ There are 9 methods in total that mutate the arrays,
     "Good morning".startsWith("morning"); // false
     ```
 
-15. ### How do you trim a string in JavaScript
+288. ### How do you trim a string in JavaScript
 
     JavaScript provided a trim method on string types to trim any whitespaces present at the beginning or ending of the string.
 
@@ -5238,7 +5239,7 @@ There are 9 methods in total that mutate the arrays,
     }
     ```
 
-16. ### How do you define multiline strings
+289. ### How do you define multiline strings
 
     You can define multiline string literals using the '\n' character followed by line terminator('\').
 
@@ -5249,7 +5250,7 @@ There are 9 methods in total that mutate the arrays,
 
     But if you have a space after the '\n' character, there will be indentation inconsistencies.
 
-17. ### What is a Regular Expression
+290. ### What is a Regular Expression
 
     A regular expression is a sequence of characters that forms a search pattern. You can use this search pattern for searching data in a text. These can be used to perform all types of text search and text replace operations. Let's see the syntax format now,
 
@@ -5263,7 +5264,7 @@ There are 9 methods in total that mutate the arrays,
     /John/i;
     ```
 
-18. ### What are the string methods that accept Regular expression
+291. ### What are the string methods that accept Regular expression
 
     There are six string methods: `search()`, `replace()`, `replaceAll()`, `match()`, `matchAll()`, and `split()`.
 
@@ -5297,7 +5298,7 @@ There are 9 methods in total that mutate the arrays,
     var n = msg.split(/\s/); // ["Hello", "John"]
     ```
 
-19. ### What are modifiers in regular expression
+292. ### What are modifiers in regular expression
 
     Modifiers can be used to perform case-insensitive and global searches. Let's list some of the modifiers,
 
@@ -5315,7 +5316,7 @@ There are 9 methods in total that mutate the arrays,
     var result = text.match(pattern); // one,one
     ```
 
-20. ### What are regular expression patterns
+293. ### What are regular expression patterns
 
     Regular Expressions provide a group of patterns in order to match characters. Basically they are categorized into 3 types,
     1. **Brackets:** These are used to find a range of characters.
@@ -5334,7 +5335,7 @@ There are 9 methods in total that mutate the arrays,
        2. n\*: Used to find matches for any string that contains zero or more occurrences of n
        3. n?: Used to find matches for any string that contains zero or one occurrences of n
 
-21. ### How do you search a string for a pattern
+294. ### How do you search a string for a pattern
 
     You can use the `test()` method of regular expression in order to search a string for a pattern, and return true or false depending on the result.
 
@@ -5343,7 +5344,7 @@ There are 9 methods in total that mutate the arrays,
     console.log(pattern.test("How are you?")); //true
     ```
 
-22. ### How do you detect a mobile browser without regexp
+295. ### How do you detect a mobile browser without regexp
 
     You can detect mobile browsers by simply running through a list of devices and checking if the useragent matches anything. This is an alternative solution for RegExp usage,
 
@@ -5365,7 +5366,7 @@ There are 9 methods in total that mutate the arrays,
     }
     ```
 
-23. ### How to convert a string to title case with JavaScript
+296. ### How to convert a string to title case with JavaScript
 
     Title case means that the first letter of each word is capitalized. You can convert a string to title case using the below function,
 
@@ -5378,7 +5379,7 @@ There are 9 methods in total that mutate the arrays,
     toTitleCase("good morning john"); // Good Morning John
     ```
 
-24. ### What are template literals
+297. ### What are template literals
 
     Template literals or template strings are string literals allowing embedded expressions. These are enclosed by the back-tick (`) character instead of double or single quotes.
     In ES6, this feature enables using dynamic expressions as below,
@@ -5395,7 +5396,7 @@ There are 9 methods in total that mutate the arrays,
 
     **Note:** You can use multi-line strings and string interpolation features with template literals.
 
-25. ### How do you write multi-line strings in template literals
+298. ### How do you write multi-line strings in template literals
 
     In ES5, you would have to use newline escape characters('\\n') and concatenation symbols(+) in order to get multi-line strings.
 
@@ -5410,7 +5411,7 @@ There are 9 methods in total that mutate the arrays,
     'This is string sentence 2`);
     ```
 
-26. ### What are raw strings
+299. ### What are raw strings
 
     ES6 provides a raw strings feature using the `String.raw()` method which is used to get the raw string form of template strings. This feature allows you to access the raw strings as they were entered, without processing escape sequences. For example, the usage would be as below,
 
@@ -5438,7 +5439,7 @@ There are 9 methods in total that mutate the arrays,
     }
     ```
 
-27. ### What is the output of below string expression
+300. ### What is the output of below string expression
 
     ```javascript
     console.log("Welcome to JS world"[0]);
@@ -5447,7 +5448,7 @@ There are 9 methods in total that mutate the arrays,
     The output of the above expression is "W".
     **Explanation:** The bracket notation with specific index on a string returns the character at a specific location. Hence, it returns the character "W" of the string. Since this is not supported in IE7 and below versions, you may need to use the .charAt() method to get the desired result.
 
-28. ### How do you create specific number of copies of a string
+301. ### How do you create specific number of copies of a string
 
     The `repeat()` method is used to construct and return a new string which contains the specified number of copies of the string on which it was called, concatenated together. Remember that this method has been added to the ECMAScript 2015 specification.
     Let's take an example of Hello string to repeat it 4 times,
@@ -5456,7 +5457,7 @@ There are 9 methods in total that mutate the arrays,
     "Hello".repeat(4); // 'HelloHelloHelloHello'
     ```
 
-29. ### How do you return all matching strings against a regular expression
+302. ### How do you return all matching strings against a regular expression
 
     The `matchAll()` method can be used to return an iterator of all results matching a string against a regular expression. For example, the below example returns an array of matching string results against a regular expression,
 
@@ -5471,7 +5472,7 @@ There are 9 methods in total that mutate the arrays,
     console.log(greetingList[2][0]); //Hello3
     ```
 
-30. ### How do you trim a string at the beginning or ending
+303. ### How do you trim a string at the beginning or ending
 
     The `trim` method of string prototype is used to trim on both sides of a string. But if you want to trim especially at the beginning or ending of the string then you can use `trimStart/trimLeft` and `trimEnd/trimRight` methods. Let's see an example of these methods on a greeting message,
 
@@ -5486,7 +5487,7 @@ There are 9 methods in total that mutate the arrays,
     console.log(greeting.trimRight()); // "   Hello, Goodmorning!"
     ```
 
-31. ### How to remove all line breaks from a string
+304. ### How to remove all line breaks from a string
 
     The easiest approach is using regular expressions to detect and replace newlines in the string. In this case, we use replace function along with string to replace with, which in our case is an empty string.
 
@@ -5498,7 +5499,7 @@ There are 9 methods in total that mutate the arrays,
 
     In the above expression, g and m are for global and multiline flags.
 
-32. ### How do you create self string using special characters
+305. ### How do you create self string using special characters
 
     The self string can be formed with the combination of `[]()!+` characters. You need to remember the below conventions to achieve this pattern.
     1. Since Arrays are truthful values, negating the arrays will produce false: ![] === false
@@ -5527,7 +5528,7 @@ There are 9 methods in total that mutate the arrays,
     (![]+[])[+!+[]+!+[]+!+[]]+(![]+[])[+!+[]+!+[]+!+[]+!+[]]+(![]+[])[+!+[]+!+[]]+(![]+[])[+[]]
     ```
 
-33. ### What is the difference between substring and substr methods?
+306. ### What is the difference between substring and substr methods?
 
     Both `substring` and `substr` are used to extract parts of a string, but there are subtle differences between the substring() and substr() methods in terms of **syntax** and **behavior**.
     1.  `substring(start, end)`
@@ -5561,7 +5562,7 @@ There are 9 methods in total that mutate the arrays,
 
         **Note:** substr() is considered a legacy feature in ECMAScript, so it is best to avoid using it if possible.
 
-34. ### How do you generate random integers
+307. ### How do you generate random integers
 
     You can use `Math.random()` with `Math.floor()` to return random integers. For example, if you want generate random integers between 1 to 10, the multiplication factor should be 10,
 
@@ -5572,7 +5573,7 @@ There are 9 methods in total that mutate the arrays,
 
     **Note:** `Math.random()` returns a random number between 0 (inclusive), and 1 (exclusive)
 
-35. ### How do you perform language specific date and time formatting
+308. ### How do you perform language specific date and time formatting
 
     You can use the `Intl.DateTimeFormat` object which is a constructor for objects that enable language-sensitive date and time formatting. Let's see this behavior with an example,
 
@@ -5582,7 +5583,7 @@ There are 9 methods in total that mutate the arrays,
     console.log(new Intl.DateTimeFormat("en-AU").format(date)); // 07/08/2019
     ```
 
-36. ### How do you display the current date in JavaScript
+309. ### How do you display the current date in JavaScript
 
     You can use `new Date()` to generate a new Date object containing the current date and time. For example, let's display the current date in mm/dd/yyyy
 
@@ -5596,7 +5597,7 @@ There are 9 methods in total that mutate the arrays,
     document.write(today);
     ```
 
-37. ### How do you convert date to another timezone in JavaScript
+310. ### How do you convert date to another timezone in JavaScript
 
     You can use the toLocaleString() method to convert dates in one timezone to another. For example, let's convert current date to British English timezone as below,
 
@@ -5604,7 +5605,7 @@ There are 9 methods in total that mutate the arrays,
     console.log(new Date().toLocaleString("en-GB", { timeZone: "UTC" })); //29/06/2019, 09:56:00
     ```
 
-38. ### How do you print numbers with commas as thousand separators
+311. ### How do you print numbers with commas as thousand separators
 
     You can use the `Number.prototype.toLocaleString()` method which returns a string with a language-sensitive representation such as thousand separator, currency etc. of this number.
 
@@ -5616,7 +5617,7 @@ There are 9 methods in total that mutate the arrays,
     console.log(convertToThousandFormat(12345.6789));
     ```
 
-39. ### How do you round numbers to certain decimals
+312. ### How do you round numbers to certain decimals
 
     You can round numbers to a certain number of decimals using `toFixed` method from native javascript.
 
@@ -5625,7 +5626,7 @@ There are 9 methods in total that mutate the arrays,
     pie = pie.toFixed(3); // 3.142
     ```
 
-40. ### How do you verify that an argument is a Number or not
+313. ### How do you verify that an argument is a Number or not
 
     The combination of IsNaN and isFinite methods are used to confirm whether an argument is a number or not.
 
@@ -5635,7 +5636,7 @@ There are 9 methods in total that mutate the arrays,
     }
     ```
 
-41. ### What is the purpose JSON stringify
+314. ### What is the purpose JSON stringify
 
     When sending data to a web server, the data has to be in a string format. You can achieve this by converting JSON object into a string using stringify() method.
 
@@ -5645,7 +5646,7 @@ There are 9 methods in total that mutate the arrays,
     console.log(userString); //"{"name":"John","age":31}"
     ```
 
-42. ### What is JSON and its common operations
+315. ### What is JSON and its common operations
 
     **JSON (JavaScript Object Notation)** is a lightweight, text-based data format that uses JavaScript object syntax for structuring data. It was popularized by Douglas Crockford and is widely used for transmitting data between a server and a client in web applications. JSON files typically have a `.json` extension and use the MIME type `application/json`.
 
@@ -5673,11 +5674,11 @@ There are 9 methods in total that mutate the arrays,
       const jsonString = JSON.stringify(obj); // '{"name":"Jane","age":25}'
       ```
 
-43. ### What is JSON
+316. ### What is JSON
 
     JSON (JavaScript Object Notation) is a lightweight format that is used for data interchanging. It is based on a subset of JavaScript language in the way objects are built in JavaScript.
 
-44. ### What are the syntax rules of JSON
+317. ### What are the syntax rules of JSON
 
     Below are the list of syntax rules of JSON
     1.  The data is in name/value pairs
@@ -5685,12 +5686,11 @@ There are 9 methods in total that mutate the arrays,
     3.  Curly braces hold objects
     4.  Square brackets hold arrays
 
-45. ### Why do you need JSON
+318. ### Why do you need JSON
 
     When exchanging data between a browser and a server, the data can only be text. Since JSON is text only, it can easily be sent to and from a server, and used as a data format by any programming language.
 
-46. ### What is the purpose of the delete operator
-
+319. ### What is the purpose of the delete operator
 
     The delete operator is used to delete the property as well as its value.
 
@@ -5703,16 +5703,16 @@ There are 9 methods in total that mutate the arrays,
 
 320. ### What are various operators supported by JavaScript
 
-     An operator is capable of manipulating(mathematical and logical computations) a certain value or operand. There are various operators supported by JavaScript as below,
-     1. **Arithmetic Operators:** Includes + (Addition), – (Subtraction), \* (Multiplication), / (Division), % (Modulus), ++ (Increment) and – – (Decrement)
-     2. **Comparison Operators:** Includes == (Equal), != (Not Equal), === (Equal with type), > (Greater than), >= (Greater than or Equal to), < (Less than), <= (Less than or Equal to)
-     3. **Logical Operators:** Includes && (Logical AND), || (Logical OR), ! (Logical NOT)
-     4. **Assignment Operators:** Includes = (Assignment Operator), += (Add and Assignment Operator), –= (Subtract and Assignment Operator), \*= (Multiply and Assignment), /= (Divide and Assignment), %= (Modules and Assignment)
-     5. **Ternary Operators:** It includes conditional(: ?) Operator
-     6. **typeof Operator:** It uses to find type of variable. The syntax looks like `typeof variable`
+    An operator is capable of manipulating(mathematical and logical computations) a certain value or operand. There are various operators supported by JavaScript as below,
+    1.  **Arithmetic Operators:** Includes + (Addition), – (Subtraction), \* (Multiplication), / (Division), % (Modulus), ++ (Increment) and – – (Decrement)
+    2.  **Comparison Operators:** Includes == (Equal), != (Not Equal), === (Equal with type), > (Greater than), >= (Greater than or Equal to), < (Less than), <= (Less than or Equal to)
+    3.  **Logical Operators:** Includes && (Logical AND), || (Logical OR), ! (Logical NOT)
+    4.  **Assignment Operators:** Includes = (Assignment Operator), += (Add and Assignment Operator), –= (Subtract and Assignment Operator), \*= (Multiply and Assignment), /= (Divide and Assignment), %= (Modules and Assignment)
+    5.  **Ternary Operators:** It includes conditional(: ?) Operator
+    6.  **typeof Operator:** It uses to find type of variable. The syntax looks like `typeof variable`
 
 321. ### What is the difference between == and === operators
-     JavaScript provides two types of equality operators:
+    JavaScript provides two types of equality operators:
 
 
     - **Loose equality (`==`, `!=`)**: Performs type conversion if the types differ, comparing values after converting them to a common type.
@@ -7794,7 +7794,7 @@ There are mainly 3 types of inline caching possible:
 2.  Polymorphic: This ia slightly optimized caching technique in which limited number of different types of objects can be passed.
 3.  Megamorphic: It is an unoptimized caching in which any number of different objects can be passed.
 
-4.  ### What are the different ways to execute external scripts?
+459.  ### What are the different ways to execute external scripts?
 
     There are three different ways to execute external scripts,
     1. async: The script is downloaded in parallel to parsing the page, and executed as soon as it is available even before parsing completes. The parsing of the page is going to be interuppted once the script is downloaded completely and then the script is executed. Thereafter, the parsing of the remaining page will continue.
@@ -7817,7 +7817,7 @@ There are mainly 3 types of inline caching possible:
 
     **Note:** You should only use either async or defer attribute if the `src` attribute is present.
 
-5.  ### How to detect system dark mode in JavaScript?
+460.  ### How to detect system dark mode in JavaScript?
 
          The combination of `Window.matchMedia()` utility method along with media query is used to check if the user has selected a dark color scheme in their operating system settings or not. The CSS media query `prefers-color-scheme` needs to be passed to identify system color theme.
 
