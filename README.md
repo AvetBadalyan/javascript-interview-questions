@@ -1,8 +1,7 @@
-# Original file link: https://github.com/sudheerj/javascript-interview-questions?tab=readme-ov-file#how-do-you-manipulate-dom-using-a-service-worker
-
 # JavaScript Interview Questions & Answers
 
 <!-- QUESTIONS_START -->
+ Original file link: https://github.com/sudheerj/javascript-interview-questions?tab=readme-ov-file#how-do-you-manipulate-dom-using-a-service-worker
 
 1.  ### What is the purpose of the let keyword
 
