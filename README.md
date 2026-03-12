@@ -1,3 +1,5 @@
+# Original file link: https://github.com/sudheerj/javascript-interview-questions?tab=readme-ov-file#how-do-you-manipulate-dom-using-a-service-worker
+
 # JavaScript Interview Questions & Answers
 
 <!-- QUESTIONS_START -->
@@ -471,9 +473,7 @@
     3. Easy to write parallel asynchronous code with Promise.all()
     4. Solves some of the common problems of callbacks(call the callback too late, too early, many times and swallow errors/exceptions)
 
-    **Cons:**
-    5. It makes little complex code
-    6. You need to load a polyfill if ES6 is not supported
+    **Cons:** 5. It makes little complex code 6. You need to load a polyfill if ES6 is not supported
 
 36. ### What is the event loop
 
@@ -3718,11 +3718,7 @@ In JavaScript, `call`, `apply`, and `bind` are methods that allow you to control
      hungry();
      ```
 
-     The above code processed in a call stack as below,
-     3. Add the `hungry()` function to the call stack list and execute the code.
-     4. Add the `eatFruits()` function to the call stack list and execute the code.
-     5. Delete the `eatFruits()` function from our call stack list.
-     6. Delete the `hungry()` function from the call stack list since there are no items anymore.
+     The above code processed in a call stack as below, 3. Add the `hungry()` function to the call stack list and execute the code. 4. Add the `eatFruits()` function to the call stack list and execute the code. 5. Delete the `eatFruits()` function from our call stack list. 6. Delete the `hungry()` function from the call stack list since there are no items anymore.
 
      ![Screenshot](images/call-stack.png)
 
@@ -5654,46 +5650,47 @@ There are 9 methods in total that mutate the arrays,
 
     **JSON (JavaScript Object Notation)** is a lightweight, text-based data format that uses JavaScript object syntax for structuring data. It was popularized by Douglas Crockford and is widely used for transmitting data between a server and a client in web applications. JSON files typically have a `.json` extension and use the MIME type `application/json`.
 
-
     #### Common Operations with JSON
-
     1. **Parsing**: Transforming a JSON-formatted string into a native JavaScript object.
-      ```js
-      const obj = JSON.parse(jsonString);
-      ```
-      - Example:
-        ```js
-        const jsonString = '{"name":"John","age":30}';
-        const obj = JSON.parse(jsonString);  // { name: "John", age: 30 }
-        ```
 
+    ```js
+    const obj = JSON.parse(jsonString);
+    ```
+
+    - Example:
+      ```js
+      const jsonString = '{"name":"John","age":30}';
+      const obj = JSON.parse(jsonString); // { name: "John", age: 30 }
+      ```
     2. **Stringification**: Converting a JavaScript object into a JSON-formatted string, commonly used for data transmission or storage.
+
+    ```js
+    const jsonString = JSON.stringify(object);
+    ```
+
+    - Example:
       ```js
-      const jsonString = JSON.stringify(object);
+      const obj = { name: "Jane", age: 25 };
+      const jsonString = JSON.stringify(obj); // '{"name":"Jane","age":25}'
       ```
-      - Example:
-        ```js
-        const obj = { name: "Jane", age: 25 };
-        const jsonString = JSON.stringify(obj);  // '{"name":"Jane","age":25}'
-        ```
 
-316. ### What is JSON
+43. ### What is JSON
 
-     JSON (JavaScript Object Notation) is a lightweight format that is used for data interchanging. It is based on a subset of JavaScript language in the way objects are built in JavaScript.
+    JSON (JavaScript Object Notation) is a lightweight format that is used for data interchanging. It is based on a subset of JavaScript language in the way objects are built in JavaScript.
 
-317. ### What are the syntax rules of JSON
+44. ### What are the syntax rules of JSON
 
-     Below are the list of syntax rules of JSON
-     1. The data is in name/value pairs
-     2. The data is separated by commas
-     3. Curly braces hold objects
-     4. Square brackets hold arrays
+    Below are the list of syntax rules of JSON
+    1.  The data is in name/value pairs
+    2.  The data is separated by commas
+    3.  Curly braces hold objects
+    4.  Square brackets hold arrays
 
-318. ### Why do you need JSON
+45. ### Why do you need JSON
 
-     When exchanging data between a browser and a server, the data can only be text. Since JSON is text only, it can easily be sent to and from a server, and used as a data format by any programming language.
+    When exchanging data between a browser and a server, the data can only be text. Since JSON is text only, it can easily be sent to and from a server, and used as a data format by any programming language.
 
-319. ### What is the purpose of the delete operator
+46. ### What is the purpose of the delete operator
 
 
     The delete operator is used to delete the property as well as its value.
@@ -7542,9 +7539,8 @@ console.log(globalThis); // => DedicatedWorkerGlobalScope {...}
      recognition.start();
      ```
 
-     In this API, browser is going to ask you for permission to use your microphone
-     2. **SpeechSynthesis (Text-to-Speech):** It provides the ability to recognize voice context from an audio input and respond. This is accessed by the `SpeechSynthesis` interface.
-        For example, the below code is used to get voice/speech from text,
+     In this API, browser is going to ask you for permission to use your microphone 2. **SpeechSynthesis (Text-to-Speech):** It provides the ability to recognize voice context from an audio input and respond. This is accessed by the `SpeechSynthesis` interface.
+     For example, the below code is used to get voice/speech from text,
 
      ```javascript
      if ("speechSynthesis" in window) {
