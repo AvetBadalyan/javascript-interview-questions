@@ -2,7 +2,7 @@
 
 <!-- QUESTIONS_START -->
 
-Original file link: https://github.com/sudheerj/javascript-interview-questions?tab=readme-ov-file#how-do-you-manipulate-dom-using-a-service-worker
+Original file link: https://github.com/sudheerj/javascript-interview-questions.git
 
 ### 1. What is the purpose of the let keyword
 
@@ -183,6 +183,7 @@ isNaN("100"); //false
 ```
 
 ### 13. What is the difference between isNaN and Number.isNaN?
+
 1.  **isNaN**: The global function `isNaN` converts the argument to a Number and returns true if the resulting value is NaN.
 1.  **Number.isNaN**: This method does not convert the argument. But it returns true when the type is a Number and value is NaN.
 
@@ -394,7 +395,7 @@ A promise must follow a specific set of rules:
 
 ### 31. What is callback in callback
 
-You can nest one callback inside in another callback to execute the actions sequentially one by one. This is known as callbacks in callbacks. Beware, too many levels of nesting lead to [Callback hell](https://github.com/sudheerj/javascript-interview-questions?tab=readme-ov-file#what-is-a-callback-hell)
+You can nest one callback inside in another callback to execute the actions sequentially one by one. This is known as callbacks in callbacks. Beware, too many levels of nesting lead to Callback hell
 
 ```javascript
 loadScript("/script1.js", function (script) {
@@ -1500,6 +1501,7 @@ The pictorial representation of these 3 event phases in DOM looks like below,
 ![Screenshot](images/event-flow.png)
 
 ### 104. What is the purpose of requestAnimationFrame method?
+
       The requestAnimationFrame() method in JavaScript is used to schedule a function to be called before the next repaint of the browser window, allowing you to create smooth, efficient animations. It's primarily used for animations and visual updates, making it an essential tool for improving performance when you're animating elements on the web.
 
 ```javascript
@@ -3092,6 +3094,7 @@ Person.prototype.prototypeAge = 40;
 ```
 
 ### 188. What is the purpose of the this keyword in JavaScript?
+
       The `this` keyword in JavaScript refers to **the object that is executing the current function**. Its value is determined by **how a function is called**, not where it is defined. `this` is essential for writing object-oriented and event-driven code, as it allows methods to interact with the data of the object they belong to.
 
 **Example 1: this in a Global Context**
@@ -3388,7 +3391,6 @@ const arrowFunc4 = (a, b) => {
 
 ### 195. What is a first order function
 
-
     A first-order function is a function that doesn’t accept another function as an argument and doesn’t return a function as its return value. i.e,  It's a regular function that works with primitive or non-function values.
 
 ```javascript
@@ -3396,7 +3398,6 @@ const firstOrder = () => console.log("I am a first order function!");
 ```
 
 ### 196. What is a higher order function
-
 
     A higher-order function is a function that either accepts another function as an argument, returns a function as its result, or both. This concept is a core part of JavaScript's functional programming capabilities and is widely used for creating modular, reusable, and expressive code.
 
@@ -3422,7 +3423,6 @@ higherOrder(firstOrderFunc);
     3. `firstOrderFunc` is also called a **callback function** because it is passed to and executed by another function.
 
 ### 197. What is a unary function
-
 
     A unary function (also known as a **monadic** function) is a function that **accepts exactly one argument**. The term "unary" simply refers to the function's arity—the number of arguments it takes.
 
@@ -3479,7 +3479,6 @@ console.log(curryUnaryFunction(1)(2)(3)); // Output: 6
 
 ### 199. What is a pure function
 
-
     A **pure function** is a function whose output depends only on its input arguments and produces no side effects. This means that given the same inputs, a pure function will always return the same output, and it does not modify any external state or data.
 
     Let's take an example to see the difference between pure and impure functions,
@@ -3506,6 +3505,7 @@ console.log(numberArray); // remains [6]
     - `pureAddNumber` creates a new array with the added number and does not modify the original array, making it pure.
 
 ### 200. What are the benefits of pure functions
+
       Some of the major benefits of pure functions are listed below,
 
 
@@ -3515,7 +3515,6 @@ console.log(numberArray); // remains [6]
     - **No side effects:** Reduces bugs related to shared state or mutation.
 
 ### 201. What is an IIFE (Immediately Invoked Function Expression)
-
 
     IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. The signature of it would be as below,
 
@@ -3536,7 +3535,6 @@ console.log(message); //Error: message is not defined
 ```
 
 ### 202. What are closures
-
 
     A closure is the combination of a function bundled(enclosed) together with its lexical environment within which that function was declared. i.e, It is an inner function that has access to the outer or enclosing function’s variables, functions and other data even after the outer function has finished its execution. The closure has three scope chains.
 
@@ -3561,7 +3559,6 @@ myFunction("Hello Mr."); //output: Hello Mr. John
     As per the above code, the inner function(i.e, greetingInfo) has access to the variables in the outer function scope(i.e, Welcome) even after the outer function has returned.
 
 ### 203. What is the purpose of isFinite function
-
 
     The isFinite() function is used to determine whether a number is a finite, legal number. It returns false if the value is +infinity, -infinity, or NaN (Not-a-Number), otherwise it returns true.
 
@@ -3923,6 +3920,7 @@ console.log(output_final);
 ```
 
 ### 222. What are the uses of closures?
+
       Closures are a powerful feature in programming languages like JavaScript. They allow functions to retain access to variables from their containing (enclosing) scope even after the outer function has finished executing. This means that a function defined within another function can access variables from the outer function, even if the outer function has already returned.
       Here are some common use cases of closures:
 
@@ -3955,7 +3953,6 @@ console.log(output_final);
 
 ### 225. What is the difference between map and forEach functions?
 
-
     Both map and forEach functions are used to iterate over an arrays but there are some differences in their functionality.
 
     1. **Returning values:** The `map` method returns a new array with transformed elements whereas `forEach` method returns `undefined` eventhough both of them are doing the same job.
@@ -3981,6 +3978,7 @@ arr.forEach(x => x * x).reduce((total, cur) => total + cur); //Uncaught TypeErro
     **Note:** Both these methods existed since ES5 onwards.
 
 ### 226. How to find the number of parameters expected by a function?
+
       The function's object has a **length** property which tells you how many formal parameters expected by a function. This is a static value defined by the function, not the number of arguments the function is called with(**arguments.length**). The basic usage of length propery is,
 
 ```javascript
@@ -4034,7 +4032,6 @@ console.log(func.length); // 2
 
 ### 227. How do you redeclare variables in a switch block without an error
 
-
     When you try to redeclare variables using `let` or `const` in multiple `case` clauses of a `switch` statement, you will get a SyntaxError. This happens because, in JavaScript, all `case` clauses within a `switch` statement share the same block scope. For example:
 
 ```javascript
@@ -4070,7 +4067,6 @@ switch (x) {
     That means, to safely redeclare variables in different cases of a switch statement, wrap each case’s code in its own block using curly braces. This ensures each variable declaration is scoped to its specific case block.
 
 ### 228. What is the Temporal Dead Zone
-
 
     The **Temporal Dead Zone (TDZ)** refers to the period between the start of a block and the point where a variable declared with `let` or `const` is initialized. During this time, the variable exists in scope but **cannot be accessed**, and attempting to do so results in a `ReferenceError`.
 
@@ -4119,11 +4115,9 @@ Because of hoisting, functions can be used before they are declared.
 
 ### 230. What is scope in JavaScript
 
-
     Scope is the accessibility of variables, functions, and objects in some particular part of your code during runtime. In other words, scope determines the visibility of variables and other resources in areas of your code.
 
 ### 231. What is a strict mode in JavaScript
-
 
     JavaScript’s "use strict" directive is used to opt into a stricter parsing and error-handling mode for your scripts or functions. It helps catch common bugs, makes your code more secure, and prepares it for future versions of JavaScript.
 
@@ -4131,11 +4125,9 @@ Because of hoisting, functions can be used before they are declared.
 
 ### 232. Why do you need strict mode
 
-
     Strict mode is useful to write "secure" JavaScript by notifying "bad syntax" into real errors. For example, it eliminates accidentally creating a global variable by throwing an error and also throws an error for assignment to a non-writable property, a getter-only property, a non-existing property, a non-existing variable, or a non-existing object.
 
 ### 233. How do you declare strict mode
-
 
     The strict mode is declared by adding "use strict"; to the beginning of a script or a function.
     If declared at the beginning of a script, it has global scope.
@@ -4159,7 +4151,6 @@ function myFunction() {
 
 ### 234. What are global variables
 
-
     Global variables are those that are available throughout the length of the code without any scope. The var keyword is used to declare a local variable but if you omit it then it will become global variable
 
 ```javascript
@@ -4167,7 +4158,6 @@ msg = "Hello"; // var is missing, it becomes global variable
 ```
 
 ### 235. What are the problems with global variables
-
 
     The problem with global variables is the conflict of variable names of local and global scope. It is also difficult to debug and test the code that relies on global variables.
 
@@ -4269,6 +4259,7 @@ console.log("GlobalContext");
 ```
 
 ### 242. What is module scope in JavaScript?
+
       Module scope is a feature introduced with ES6 (ES2015) modules that creates a scope specific to a module file, isolating variables and functions declared within it from the global scope and other modules. Variables and functions declared in a module are private by default and can only be accessed by other modules if they are explicitly exported.
 
 Key characteristics of module scope:
@@ -4481,7 +4472,6 @@ console.log(user.constructor === Array); // false
 
 ### 247. What is the purpose of the array slice method
 
-
     The `slice()` method in JavaScript is used to extract a section of an array, returning a new array containing the selected elements. It does not modify the original array. The method takes two arguments:
 
     - **start**: The index at which extraction begins (inclusive).
@@ -4504,7 +4494,6 @@ let arrayIntegers4 = arrayIntegers.slice(-3, -1); // [3, 4]
     The `slice()` method does **not** mutate (change) the original array; instead, it returns a new array containing the extracted elements.
 
 ### 248. What is the purpose of the array splice method
-
 
     The `splice()` method in JavaScript is used to add, remove, or replace elements within an array. Unlike `slice()`, which creates a shallow copy and does not alter the original array, `splice()` **modifies the original array in place** and returns an array containing the removed elements.
 
@@ -5138,6 +5127,7 @@ console.log(sum); // 21
 ```
 
 ### 281. What are the array mutation methods?
+
       JavaScript array methods can be categorized into two groups:
 
 
@@ -5158,7 +5148,6 @@ There are 9 methods in total that mutate the arrays,
 
 ### 282. What happens If I pass string type for getPrototype method
 
-
     In ES5, it will throw a TypeError exception if the obj parameter isn't an object. Whereas in ES2015, the parameter will be coerced to an `Object`.
 
 ```javascript
@@ -5170,7 +5159,6 @@ Object.getPrototypeOf("James"); // String.prototype
 
 ### 283. How do you make first letter of the string in an uppercase
 
-
     You can create a function which uses a chain of string methods such as charAt, toUpperCase and slice methods to generate a string with the first letter in uppercase.
 
 ```javascript
@@ -5181,7 +5169,6 @@ function capitalizeFirstLetter(string) {
 
 ### 284. How do you parse JSON string
 
-
     When receiving the data from a web server, the data is always in a string format. But you can convert this string value to a javascript object using parse() method.
 
 ```javascript
@@ -5191,7 +5178,6 @@ console.log(userJSON); // {name: "John", age: 31}
 ```
 
 ### 285. How do you check whether a string contains a substring
-
 
     There are 3 possible ways to check whether a string contains a substring or not,
     1. **Using includes:** ES6 provided `String.prototype.includes` method to test a string contains a substring
@@ -5220,7 +5206,6 @@ regex.test(mainString);
 
 ### 286. How do you check if a string starts with another string
 
-
     You can use ECMAScript 6's `String.prototype.startsWith()` method to check if a string starts with another string or not. But it is not yet supported in all browsers. Let's see an example to see this usage,
 
 ```javascript
@@ -5229,7 +5214,6 @@ regex.test(mainString);
 ```
 
 ### 287. How do you trim a string in JavaScript
-
 
     JavaScript provided a trim method on string types to trim any whitespaces present at the beginning or ending of the string.
 
@@ -5253,7 +5237,6 @@ if (!String.prototype.trim) {
 
 ### 288. How do you define multiline strings
 
-
     You can define multiline string literals using the '\n' character followed by line terminator('\').
 
 ```javascript
@@ -5264,7 +5247,6 @@ console.log(str);
     But if you have a space after the '\n' character, there will be indentation inconsistencies.
 
 ### 289. What is a Regular Expression
-
 
     A regular expression is a sequence of characters that forms a search pattern. You can use this search pattern for searching data in a text. These can be used to perform all types of text search and text replace operations. Let's see the syntax format now,
 
@@ -5279,7 +5261,6 @@ console.log(str);
 ```
 
 ### 290. What are the string methods that accept Regular expression
-
 
     There are six string methods: `search()`, `replace()`, `replaceAll()`, `match()`, `matchAll()`, and `split()`.
 
@@ -5315,7 +5296,6 @@ var n = msg.split(/\s/); // ["Hello", "John"]
 
 ### 291. What are modifiers in regular expression
 
-
     Modifiers can be used to perform case-insensitive and global searches. Let's list some of the modifiers,
 
     | Modifier | Description                                             |
@@ -5333,7 +5313,6 @@ var result = text.match(pattern); // one,one
 ```
 
 ### 292. What are regular expression patterns
-
 
     Regular Expressions provide a group of patterns in order to match characters. Basically they are categorized into 3 types,
     1. **Brackets:** These are used to find a range of characters.
@@ -5354,7 +5333,6 @@ var result = text.match(pattern); // one,one
 
 ### 293. How do you search a string for a pattern
 
-
     You can use the `test()` method of regular expression in order to search a string for a pattern, and return true or false depending on the result.
 
 ```javascript
@@ -5363,7 +5341,6 @@ console.log(pattern.test("How are you?")); //true
 ```
 
 ### 294. How do you detect a mobile browser without regexp
-
 
     You can detect mobile browsers by simply running through a list of devices and checking if the useragent matches anything. This is an alternative solution for RegExp usage,
 
@@ -5387,7 +5364,6 @@ function detectmob() {
 
 ### 295. How to convert a string to title case with JavaScript
 
-
     Title case means that the first letter of each word is capitalized. You can convert a string to title case using the below function,
 
 ```javascript
@@ -5400,7 +5376,6 @@ toTitleCase("good morning john"); // Good Morning John
 ```
 
 ### 296. What are template literals
-
 
     Template literals or template strings are string literals allowing embedded expressions. These are enclosed by the back-tick (`) character instead of double or single quotes.
     In ES6, this feature enables using dynamic expressions as below,
@@ -5419,7 +5394,6 @@ var greeting = 'Welcome to JS World, Mr. ' + firstName + ' ' + lastName.`
 
 ### 297. How do you write multi-line strings in template literals
 
-
     In ES5, you would have to use newline escape characters('\\n') and concatenation symbols(+) in order to get multi-line strings.
 
 ```javascript
@@ -5434,7 +5408,6 @@ console.log(`This is string sentence
 ```
 
 ### 298. What are raw strings
-
 
     ES6 provides a raw strings feature using the `String.raw()` method which is used to get the raw string form of template strings. This feature allows you to access the raw strings as they were entered, without processing escape sequences. For example, the usage would be as below,
 
@@ -5471,7 +5444,6 @@ console.log("Welcome to JS world"[0]);
 
 ### 300. How do you create specific number of copies of a string
 
-
     The `repeat()` method is used to construct and return a new string which contains the specified number of copies of the string on which it was called, concatenated together. Remember that this method has been added to the ECMAScript 2015 specification.
     Let's take an example of Hello string to repeat it 4 times,
 
@@ -5480,7 +5452,6 @@ console.log("Welcome to JS world"[0]);
 ```
 
 ### 301. How do you return all matching strings against a regular expression
-
 
     The `matchAll()` method can be used to return an iterator of all results matching a string against a regular expression. For example, the below example returns an array of matching string results against a regular expression,
 
@@ -5497,7 +5468,6 @@ console.log(greetingList[2][0]); //Hello3
 
 ### 302. How do you trim a string at the beginning or ending
 
-
     The `trim` method of string prototype is used to trim on both sides of a string. But if you want to trim especially at the beginning or ending of the string then you can use `trimStart/trimLeft` and `trimEnd/trimRight` methods. Let's see an example of these methods on a greeting message,
 
 ```javascript
@@ -5513,7 +5483,6 @@ console.log(greeting.trimRight()); // "   Hello, Goodmorning!"
 
 ### 303. How to remove all line breaks from a string
 
-
     The easiest approach is using regular expressions to detect and replace newlines in the string. In this case, we use replace function along with string to replace with, which in our case is an empty string.
 
 ```javascript
@@ -5525,7 +5494,6 @@ function remove_linebreaks( var message ) {
     In the above expression, g and m are for global and multiline flags.
 
 ### 304. How do you create self string using special characters
-
 
     The self string can be formed with the combination of `[]()!+` characters. You need to remember the below conventions to achieve this pattern.
     1. Since Arrays are truthful values, negating the arrays will produce false: ![] === false
@@ -5555,7 +5523,6 @@ function remove_linebreaks( var message ) {
 ```
 
 ### 305. What is the difference between substring and substr methods?
-
 
     Both `substring` and `substr` are used to extract parts of a string, but there are subtle differences between the substring() and substr() methods in terms of **syntax** and **behavior**.
     1.  `substring(start, end)`
@@ -5591,7 +5558,6 @@ console.log(str.substr(-5, 3)); // "Wor" (starts from 'W')`
 
 ### 306. How do you generate random integers
 
-
     You can use `Math.random()` with `Math.floor()` to return random integers. For example, if you want generate random integers between 1 to 10, the multiplication factor should be 10,
 
 ```javascript
@@ -5603,7 +5569,6 @@ Math.floor(Math.random() * 100) + 1; // returns a random integer from 1 to 100
 
 ### 307. How do you perform language specific date and time formatting
 
-
     You can use the `Intl.DateTimeFormat` object which is a constructor for objects that enable language-sensitive date and time formatting. Let's see this behavior with an example,
 
 ```javascript
@@ -5613,7 +5578,6 @@ console.log(new Intl.DateTimeFormat("en-AU").format(date)); // 07/08/2019
 ```
 
 ### 308. How do you display the current date in JavaScript
-
 
     You can use `new Date()` to generate a new Date object containing the current date and time. For example, let's display the current date in mm/dd/yyyy
 
@@ -5629,7 +5593,6 @@ document.write(today);
 
 ### 309. How do you convert date to another timezone in JavaScript
 
-
     You can use the toLocaleString() method to convert dates in one timezone to another. For example, let's convert current date to British English timezone as below,
 
 ```javascript
@@ -5637,7 +5600,6 @@ console.log(new Date().toLocaleString("en-GB", { timeZone: "UTC" })); //29/06/20
 ```
 
 ### 310. How do you print numbers with commas as thousand separators
-
 
     You can use the `Number.prototype.toLocaleString()` method which returns a string with a language-sensitive representation such as thousand separator, currency etc. of this number.
 
@@ -5651,7 +5613,6 @@ console.log(convertToThousandFormat(12345.6789));
 
 ### 311. How do you round numbers to certain decimals
 
-
     You can round numbers to a certain number of decimals using `toFixed` method from native javascript.
 
 ```javascript
@@ -5660,7 +5621,6 @@ pie = pie.toFixed(3); // 3.142
 ```
 
 ### 312. How do you verify that an argument is a Number or not
-
 
     The combination of IsNaN and isFinite methods are used to confirm whether an argument is a number or not.
 
@@ -5671,7 +5631,6 @@ function isNumber(n) {
 ```
 
 ### 313. What is the purpose JSON stringify
-
 
     When sending data to a web server, the data has to be in a string format. You can achieve this by converting JSON object into a string using stringify() method.
 
@@ -5715,11 +5674,9 @@ const jsonString = JSON.stringify(obj); // '{"name":"Jane","age":25}'
 
 ### 315. What is JSON
 
-
     JSON (JavaScript Object Notation) is a lightweight format that is used for data interchanging. It is based on a subset of JavaScript language in the way objects are built in JavaScript.
 
 ### 316. What are the syntax rules of JSON
-
 
     Below are the list of syntax rules of JSON
     1.  The data is in name/value pairs
@@ -5729,11 +5686,9 @@ const jsonString = JSON.stringify(obj); // '{"name":"Jane","age":25}'
 
 ### 317. Why do you need JSON
 
-
     When exchanging data between a browser and a server, the data can only be text. Since JSON is text only, it can easily be sent to and from a server, and used as a data format by any programming language.
 
 ### 318. What is the purpose of the delete operator
-
 
     The delete operator is used to delete the property as well as its value.
 
@@ -5746,7 +5701,6 @@ console.log(user); // {firstName: "John", lastName:"Doe"}
 
 ### 319. What are various operators supported by JavaScript
 
-
     An operator is capable of manipulating(mathematical and logical computations) a certain value or operand. There are various operators supported by JavaScript as below,
     1.  **Arithmetic Operators:** Includes + (Addition), – (Subtraction), \* (Multiplication), / (Division), % (Modulus), ++ (Increment) and – – (Decrement)
     2.  **Comparison Operators:** Includes == (Equal), != (Not Equal), === (Equal with type), > (Greater than), >= (Greater than or Equal to), < (Less than), <= (Less than or Equal to)
@@ -5756,7 +5710,6 @@ console.log(user); // {firstName: "John", lastName:"Doe"}
     6.  **typeof Operator:** It uses to find type of variable. The syntax looks like `typeof variable`
 
 ### 320. What is the difference between == and === operators
-
 
     JavaScript provides two types of equality operators:
     - **Loose equality (`==`, `!=`)**: Performs type conversion if the types differ, comparing values after converting them to a common type.
@@ -5799,7 +5752,6 @@ NaN === NaN           // false
 
 ### 321. What is the purpose of double exclamation
 
-
     The double exclamation or negation(!!) ensures the resulting type is a boolean. If it was falsey (e.g. 0, null, undefined, etc.), it will be false, otherwise, it will be true.
     For example, you can test IE version using this expression as below,
 
@@ -5818,7 +5770,6 @@ console.log(navigator.userAgent.match(/MSIE 8.0/)); // returns either an Array o
     **Note:** The expression !! is not an operator, but it is just twice of ! operator.
 
 ### 322. What is the purpose of void 0
-
 
     Void(0) is used to prevent the page from refreshing. This will be helpful to eliminate the unwanted side-effect, because it will return the undefined primitive value. It is commonly used for HTML documents that use href="JavaScript:Void(0);" within an `<a>` element. i.e, when you click a link, the browser loads a new page or refreshes the same page. But this behavior will be prevented using this expression.
     For example, the below link notify the message without reloading the page
@@ -6084,6 +6035,7 @@ try {
 ```
 
 ### 342. What are the two types of loops in JavaScript
+
 1.  **Entry Controlled loops:** In this kind of loop type, the test condition is tested before entering the loop body. For example, For Loop and While Loop comes under this category.
 1.  **Exit Controlled Loops:** In this kind of loop type, the test condition is tested or evaluated at the end of the loop body. i.e, the loop body will execute at least once irrespective of test condition true or false. For example, do-while loop comes under this category.
 
@@ -6136,7 +6088,6 @@ const weather = (function getWeather(temp) {
 ```
 
 ### 346. What is memoization
-
 
     Memoization is a functional programming technique which attempts to increase a function’s performance by caching its previously computed results. Each time a memoized function is called, its parameters are used to index the cache. If the data is present, then it can be returned, without executing the entire function. Otherwise the function is executed and then the result is added to the cache.
     Let's take an example of adding function with memoization,
@@ -6268,7 +6219,6 @@ console.log(greeting(user));
 
 ### 358. What is the main difference between localStorage and sessionStorage
 
-
     LocalStorage is the same as SessionStorage but it persists the data even when the browser is closed and reopened(i.e it has no expiration time) whereas in sessionStorage data gets cleared when the page session ends.
 
 ### 359. What is the use of preventDefault method
@@ -6367,7 +6317,6 @@ console.log(y); // 10
 ```
 
 ### 366. What are the differences between undeclared and undefined variables
-
 
     Below are the major differences between undeclared(not defined) and undefined variables,
 
@@ -6577,7 +6526,6 @@ with (a.b.c) {
 
 ### 378. What are the tools or techniques used for debugging JavaScript code
 
-
     You can use below tools or techniques for debugging javascript
 
     1. Chrome Devtools
@@ -6589,7 +6537,6 @@ with (a.b.c) {
       You can set breakpoints in the javascript code once the debugger statement is executed and the debugger window pops up. At each breakpoint, javascript will stop executing, and let you examine the JavaScript values. After examining values, you can resume the execution of code using the play button.
 
 ### 380. What is the difference between slice and splice
-
 
     Here are the key differences between `slice()` and `splice()` methods in JavaScript arrays:
 
@@ -6606,11 +6553,9 @@ with (a.b.c) {
 
 ### 381. What are modules
 
-
     Modules refer to small units of independent, reusable code and also act as the foundation of many JavaScript design patterns. Most of the JavaScript modules export an object literal, a function, or a constructor
 
 ### 382. Why do you need modules
-
 
     Below are the list of benefits using modules in javascript ecosystem
 
@@ -6620,7 +6565,6 @@ with (a.b.c) {
 
 ### 383. What is eval
 
-
     The eval() function evaluates JavaScript code represented as a string. The string can be a JavaScript expression, variable, statement, or sequence of statements.
 
 ```javascript
@@ -6628,7 +6572,6 @@ console.log(eval("1 + 2")); //  3
 ```
 
 ### 384. How do you detect caps lock key turned on or not
-
 
     The `mouseEvent getModifierState()` is used to return a boolean value that indicates whether the specified modifier key is activated or not. The modifiers such as CapsLock, ScrollLock and NumLock are activated when they are clicked, and deactivated when they are clicked again.
 
@@ -6653,7 +6596,6 @@ console.log(eval("1 + 2")); //  3
 
 ### 385. How do you find operating system details
 
-
     The window.navigator object contains information about the visitor's browser OS details. Some of the OS properties are available under platform property,
 
 ```javascript
@@ -6661,7 +6603,6 @@ console.log(navigator.platform);
 ```
 
 ### 386. What is the difference between an attribute and a property
-
 
     Attributes are defined on the HTML markup whereas properties are defined on the DOM. For example, the below HTML element has 2 attributes: `type` and `value`,
 
@@ -7491,7 +7432,6 @@ var empDetailsDeepCopy = {
 
 ### 436. Benefits
 
-
      - Avoids deep inheritance hierarchies
      - Encourages composition over inheritance
      - Promotes reusable and modular code
@@ -7627,7 +7567,6 @@ authenticate && loginToPorta();
 ```
 
 ### 446. What is debouncing?
-
 
     Debouncing is a programming technique used to limit how often a function is executed. Specifically, it ensures that a function is only triggered after a certain amount of time has passed since it was last invoked. This prevents unnecessary or excessive function calls, which can help optimize performance and reduce unnecessary CPU usage or API requests.
 
@@ -7788,6 +7727,7 @@ multiplyBy2(add(2, 3));
 - Math.random() calls: Modifies the internal state of Math object
 
 ### 452. What are the phases of execution context?
+
       The execution context in JavaScript is a data structure that stores the information necessary for executing a piece of code. It includes the code itself, the values of the variables used in the code, and the scope chain. The scope chain is a list of objects that are used to resolve variable names.
 
 The execution context has two phases:
