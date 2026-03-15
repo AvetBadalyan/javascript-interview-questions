@@ -1953,7 +1953,7 @@ const obj2 = Singleton.getInstance();
 console.log(obj1 === obj2); // true
 ```
 
-     In modern JavaScript applications, singletons are commonly implemented using ES6 modules for their built-in caching behavior, or closures for encapsulated state management.
+In modern JavaScript applications, singletons are commonly implemented using ES6 modules for their built-in caching behavior, or closures for encapsulated state management.
 
 ### 118. What is a prototype chain
 
@@ -2031,7 +2031,7 @@ You can check whether a key exists in an object or not using three approaches,
 "key" in obj;
 ```
 
-    and If you want to check if a key doesn't exist, remember to use parenthesis,
+and If you want to check if a key doesn't exist, remember to use parenthesis,
 
 ```javascript
 !("key" in obj);
